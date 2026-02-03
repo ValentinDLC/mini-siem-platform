@@ -5,7 +5,9 @@ Collects sample logs, analyzes them, stores logs and alerts
 
 import sys
 import os
-sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
+ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+sys.path.append(ROOT)
 
 from backend.app.core.database import SessionLocal, init_db
 from backend.app.models.database import LogEvent, Alert
