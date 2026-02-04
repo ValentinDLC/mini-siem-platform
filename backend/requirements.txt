@@ -1,8 +1,7 @@
-fastapi==0.104.1
-uvicorn[standard]==0.24.0
-sqlalchemy==2.0.23
-# psycopg2-binary==2.9.9  # Pour PostgreSQL en prod (nécessite pg_config)
-pydantic==2.5.0
-pydantic-settings==2.1.0
+fastapi==0.115.6
+uvicorn[standard]==0.34.0
+sqlalchemy==2.0.36
+pydantic==2.10.4
+pydantic-settings==2.7.1
 python-dotenv==1.0.0
 elasticsearch==8.11.1
