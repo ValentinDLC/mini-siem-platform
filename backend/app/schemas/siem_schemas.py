@@ -2,7 +2,7 @@
 Pydantic schemas for API validation
 """
 
-from pydantic import BaseModel, IPvAnyAddress
+from pydantic import BaseModel
 from typing import Optional, List, Dict, Any
 from datetime import datetime
 
@@ -15,7 +15,7 @@ class LogEventCreate(BaseModel):
     username: Optional[str] = None
     message: str
     raw_log: str
-    metadata: Optional[Dict[str, Any]] = None
+    log_metadata: Optional[Dict[str, Any]] = None
 
 
 class LogEventResponse(LogEventCreate):

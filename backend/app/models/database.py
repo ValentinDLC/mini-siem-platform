@@ -21,7 +21,7 @@ class LogEvent(Base):
     username = Column(String(100), nullable=True)
     message = Column(Text)
     raw_log = Column(Text)
-    metadata = Column(JSON, nullable=True)
+    log_metadata = Column(JSON, nullable=True)  # renamed: 'metadata' is reserved
 
 
 class Alert(Base):
